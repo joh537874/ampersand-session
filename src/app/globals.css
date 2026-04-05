@@ -102,7 +102,12 @@ input {
 
 .hachuping-float {
   will-change: transform;
-  animation: hachuping-float ease-in-out infinite;
+  animation: hachuping-drift ease-in-out infinite alternate;
+}
+
+.hachuping-float-image {
+  will-change: transform;
+  animation: hachuping-sway ease-in-out infinite alternate;
 }
 
 @keyframes blossom-burst {
@@ -167,20 +172,25 @@ input {
   }
 }
 
-@keyframes hachuping-float {
+@keyframes hachuping-drift {
   0% {
     transform: translate3d(0, 0, 0) rotate(var(--float-rotate, -4deg));
   }
-  25% {
-    transform: translate3d(10px, -14px, 0) rotate(calc(var(--float-rotate, -4deg) + 6deg));
+  100% {
+    transform:
+      translate3d(var(--float-x, 12px), calc(var(--float-y, 18px) * -1), 0)
+      rotate(calc(var(--float-rotate, -4deg) + 8deg));
+  }
+}
+
+@keyframes hachuping-sway {
+  0% {
+    transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: translate3d(-8px, -28px, 0) rotate(calc(var(--float-rotate, -4deg) + 10deg));
-  }
-  75% {
-    transform: translate3d(12px, -12px, 0) rotate(calc(var(--float-rotate, -4deg) + 3deg));
+    transform: rotate(-4deg) scale(1.02);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(var(--float-rotate, -4deg));
+    transform: rotate(3deg) scale(0.985);
   }
 }

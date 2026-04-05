@@ -3,12 +3,12 @@ import hachuping from '@/app/hachuping.webp';
 import type { CSSProperties } from 'react';
 
 const floatingSprites = [
-  { top: '12%', left: '6%', size: 94, duration: '9s', delay: '-1.8s', rotate: '-8deg' },
-  { top: '20%', right: '8%', size: 84, duration: '11s', delay: '-4.2s', rotate: '7deg' },
-  { top: '44%', left: '4%', size: 72, duration: '10s', delay: '-2.4s', rotate: '-6deg' },
-  { top: '52%', right: '5%', size: 98, duration: '12s', delay: '-5.6s', rotate: '9deg' },
-  { top: '74%', left: '10%', size: 80, duration: '10.5s', delay: '-3.4s', rotate: '-5deg' },
-  { top: '78%', right: '12%', size: 88, duration: '9.8s', delay: '-6.2s', rotate: '6deg' },
+  { top: '12%', left: '6%', size: 94, duration: '9s', delay: '-1.8s', rotate: '-8deg', x: '14px', y: '18px', sway: '5.8s' },
+  { top: '20%', right: '8%', size: 84, duration: '11s', delay: '-4.2s', rotate: '7deg', x: '12px', y: '22px', sway: '6.6s' },
+  { top: '44%', left: '4%', size: 72, duration: '10s', delay: '-2.4s', rotate: '-6deg', x: '10px', y: '16px', sway: '5.4s' },
+  { top: '52%', right: '5%', size: 98, duration: '12s', delay: '-5.6s', rotate: '9deg', x: '16px', y: '24px', sway: '7.2s' },
+  { top: '74%', left: '10%', size: 80, duration: '10.5s', delay: '-3.4s', rotate: '-5deg', x: '11px', y: '19px', sway: '6.1s' },
+  { top: '78%', right: '12%', size: 88, duration: '9.8s', delay: '-6.2s', rotate: '6deg', x: '13px', y: '17px', sway: '5.9s' },
 ];
 
 export default function HachupingDecor() {
@@ -37,14 +37,16 @@ export default function HachupingDecor() {
                 animationDuration: sprite.duration,
                 animationDelay: sprite.delay,
                 '--float-rotate': sprite.rotate,
+                '--float-x': sprite.x,
+                '--float-y': sprite.y,
               } as CSSProperties
             }
           >
             <Image
               src={hachuping}
               alt=""
-              className="h-auto w-full object-contain drop-shadow-[0_18px_24px_rgba(244,142,188,0.24)]"
-              style={{ width: `${sprite.size}px` }}
+              className="hachuping-float-image h-auto w-full object-contain drop-shadow-[0_18px_24px_rgba(244,142,188,0.24)]"
+              style={{ width: `${sprite.size}px`, animationDuration: sprite.sway } as CSSProperties}
             />
           </div>
         ))}
