@@ -99,7 +99,7 @@ export default function SessionCard({ session, count, myRegistration, onRegister
           {isRegistered ? (
             <button
               onClick={onCancel}
-              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-rose-700 shadow-[0_12px_24px_rgba(241,143,188,0.14)] hover:-translate-y-0.5 hover:bg-rose-50"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-rose-700 shadow-[0_10px_18px_rgba(241,143,188,0.10)] hover:bg-rose-50"
             >
               신청 취소
             </button>
@@ -110,7 +110,7 @@ export default function SessionCard({ session, count, myRegistration, onRegister
               className={`rounded-full px-5 py-2.5 text-sm font-semibold text-white ${
                 isFull
                   ? 'cursor-not-allowed bg-pink-100 text-rose-300'
-                  : 'bg-[linear-gradient(135deg,#f8b4d5,#ee88ba)] shadow-[0_16px_34px_rgba(241,143,188,0.28)] hover:-translate-y-0.5 hover:brightness-95'
+                  : 'bg-[linear-gradient(135deg,#f8b4d5,#ee88ba)] shadow-[0_12px_22px_rgba(241,143,188,0.18)] hover:brightness-95'
               }`}
             >
               신청하기

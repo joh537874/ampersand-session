@@ -39,7 +39,7 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen text-rose-950">
-      <header className="sticky top-0 z-40 border-b border-[color:var(--line)] bg-[rgba(255,248,252,0.72)] backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-[color:var(--line)] bg-[rgba(255,248,252,0.88)] backdrop-blur-sm">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#f8b7d7,#f18fbc)] text-xl font-black text-white shadow-[0_18px_34px_rgba(241,143,188,0.34)]">
@@ -54,7 +54,7 @@ export default async function HomePage() {
           </div>
           <Link
             href="/attendees"
-            className="rounded-full border border-pink-200/70 bg-white/80 px-4 py-2 text-sm font-medium text-rose-700 shadow-[0_10px_30px_rgba(241,143,188,0.12)] hover:-translate-y-0.5 hover:bg-white"
+            className="rounded-full border border-pink-200/70 bg-white/88 px-4 py-2 text-sm font-medium text-rose-700 shadow-[0_8px_18px_rgba(241,143,188,0.08)] hover:bg-white"
           >
             신청자 현황 보기
           </Link>

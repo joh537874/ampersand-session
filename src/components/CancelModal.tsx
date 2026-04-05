@@ -77,7 +77,7 @@ export default function CancelModal({ session, registration, onClose, onSuccess 
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 rounded-full bg-red-600 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(220,38,38,0.18)] hover:bg-red-500 disabled:opacity-50"
+              className="flex-1 rounded-full bg-red-600 py-3 text-sm font-semibold text-white shadow-[0_10px_18px_rgba(220,38,38,0.12)] hover:bg-red-500 disabled:opacity-50"
             >
               {loading ? '취소 중...' : '신청 취소'}
             </button>

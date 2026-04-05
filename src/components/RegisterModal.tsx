@@ -81,7 +81,7 @@ export default function RegisterModal({ session, onClose, onSuccess }: Props) {
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 rounded-full bg-[linear-gradient(135deg,#f8b4d5,#ee88ba)] py-3 text-sm font-semibold text-white shadow-[0_16px_34px_rgba(241,143,188,0.28)] hover:brightness-95 disabled:opacity-50"
+              className="flex-1 rounded-full bg-[linear-gradient(135deg,#f8b4d5,#ee88ba)] py-3 text-sm font-semibold text-white shadow-[0_12px_22px_rgba(241,143,188,0.18)] hover:brightness-95 disabled:opacity-50"
             >
               {loading ? '신청 중...' : '신청하기'}
             </button>

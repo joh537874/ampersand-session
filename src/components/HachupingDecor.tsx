@@ -45,7 +45,7 @@ export default function HachupingDecor() {
             <Image
               src={hachuping}
               alt=""
-              className="hachuping-float-image h-auto w-full object-contain drop-shadow-[0_18px_24px_rgba(244,142,188,0.24)]"
+              className="hachuping-float-image h-auto w-full object-contain opacity-85 drop-shadow-[0_8px_12px_rgba(244,142,188,0.10)]"
               style={{ width: `${sprite.size}px`, animationDuration: sprite.sway } as CSSProperties}
             />
           </div>
