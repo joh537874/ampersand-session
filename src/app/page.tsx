@@ -67,7 +67,7 @@ export default async function HomePage() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-pink-200/80 bg-[rgba(255,250,253,0.82)] px-4 py-2 text-sm font-medium text-rose-700 shadow-[0_12px_40px_rgba(241,143,188,0.10)]">
               <span className="h-2 w-2 rounded-full bg-[color:var(--brand)]" />
-              이번 주 세션 신청이 벚꽃처럼 열렸어요
+              벚꽃피는데 세션이라니;;
             </div>
 
             <div className="max-w-3xl">
@@ -139,7 +139,6 @@ export default async function HomePage() {
             <h2 className="mt-2 text-3xl font-black tracking-[-0.04em] text-rose-950">이번 주 오픈된 세션</h2>
           </div>
           <p className="max-w-xl text-sm leading-6 text-rose-700/80">
-            카드에서 일정과 잔여 인원을 확인한 뒤 바로 신청할 수 있어요. 이미 신청한 세션은 강조 표시됩니다.
           </p>
         </div>
         {sessions.length === 0 ? (
