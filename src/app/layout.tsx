@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import FallingPetals from "@/components/FallingPetals";
+import HachupingDecor from "@/components/HachupingDecor";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <HachupingDecor />
         <FallingPetals />
         <div className="relative z-20 flex min-h-full flex-col">{children}</div>
       </body>
