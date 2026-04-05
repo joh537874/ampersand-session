@@ -15,8 +15,10 @@ export default function Toast({ message, type, onClose }: Props) {
   }, [onClose]);
 
   return (
-    <div className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-xl shadow-lg text-sm font-medium text-white transition-all ${
-      type === 'success' ? 'bg-indigo-600' : 'bg-red-600'
+    <div className={`fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-full border px-5 py-3 text-sm font-semibold shadow-[0_18px_45px_rgba(241,143,188,0.22)] transition-all ${
+      type === 'success'
+        ? 'border-pink-200/80 bg-[rgba(255,250,253,0.95)] text-rose-700'
+        : 'border-red-200 bg-white text-red-600'
     }`}>
       {message}
     </div>
