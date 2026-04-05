@@ -67,18 +67,16 @@ export default async function HomePage() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-pink-200/80 bg-[rgba(255,250,253,0.82)] px-4 py-2 text-sm font-medium text-rose-700 shadow-[0_12px_40px_rgba(241,143,188,0.10)]">
               <span className="h-2 w-2 rounded-full bg-[color:var(--brand)]" />
-              벚꽃피는데 세션이라니;;
+              벚꽃놀이 가고 싶은 마음을 담아...
             </div>
 
             <div className="max-w-3xl">
-              <h1 className="text-4xl font-black tracking-[-0.04em] text-rose-950 sm:text-5xl lg:text-6xl">
-                배우고 싶은 세션을
+              <h1 className="text-4xl font-black tracking-[-0.04em] text-rose-800 sm:text-5xl lg:text-6xl">
+                벚꽃 하츄핑 봄날의 세션 신청~!
                 <br />
-                벚꽃처럼 가볍게 담아두세요.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-rose-700/80 sm:text-lg">
-                Ampersand 4기 세션 일정을 한곳에 모았어요. 원하는 세션을 고르고 이름과 비밀번호만 입력하면
-                바로 신청할 수 있습니다.
+               화이팅이에요 Ampersand~!!
               </p>
             </div>
 

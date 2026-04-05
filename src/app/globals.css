@@ -83,6 +83,19 @@ input {
   animation: blossom-glow 1s ease-out forwards;
 }
 
+.falling-petal {
+  position: absolute;
+  top: -8%;
+  width: 18px;
+  height: 14px;
+  border-radius: 999px 999px 999px 999px / 82% 82% 60% 60%;
+  box-shadow: 0 0 16px rgba(255, 210, 232, 0.42);
+  opacity: var(--petal-opacity);
+  transform: rotate(var(--petal-rotate)) scale(var(--petal-scale));
+  animation: falling-petal var(--petal-duration) linear infinite;
+  animation-delay: var(--petal-delay);
+}
+
 @keyframes blossom-burst {
   0% {
     opacity: 0;
@@ -115,5 +128,32 @@ input {
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(2.4);
+  }
+}
+
+@keyframes falling-petal {
+  0% {
+    transform:
+      translate3d(0, -8vh, 0)
+      rotate(0deg)
+      scale(var(--petal-scale));
+  }
+  30% {
+    transform:
+      translate3d(calc(var(--petal-drift) * -0.45), 28vh, 0)
+      rotate(calc(var(--petal-rotate) * -0.7))
+      scale(calc(var(--petal-scale) + 0.03));
+  }
+  65% {
+    transform:
+      translate3d(var(--petal-drift), 66vh, 0)
+      rotate(calc(var(--petal-rotate) * 1.2))
+      scale(var(--petal-scale));
+  }
+  100% {
+    transform:
+      translate3d(calc(var(--petal-drift) * -0.6), 112vh, 0)
+      rotate(calc(var(--petal-rotate) * -1.1))
+      scale(calc(var(--petal-scale) - 0.04));
   }
 }
