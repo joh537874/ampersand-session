@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ampersand 세션 신청",
   description: "Ampersand 학회 세션 신청 사이트",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
