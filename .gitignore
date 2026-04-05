@@ -33,6 +33,17 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Google OAuth 인증 파일 (절대 커밋하지 마세요)
+credentials.json
+token.json
+
+# Python 캐시 (fetch_calendar.py 실행 시 생성)
+__pycache__/
+*.py[cod]
+
+# Claude Code 로컬 설정
+.claude/settings.local.json
+
 # vercel
 .vercel
 
