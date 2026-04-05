@@ -66,9 +66,8 @@ export default async function AttendeesPage() {
 
             <div className="max-w-3xl">
               <h1 className="text-4xl font-black tracking-[-0.04em] text-rose-950 sm:text-5xl">
-                신청 현황도
+                신청 현황
                 <br />
-                같은 봄빛으로 정리했어요.
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-rose-700/80 sm:text-lg">
                 세션별 신청 인원과 명단을 한눈에 확인할 수 있어요. 가장 많이 찬 세션과 전체 신청 수까지 함께 볼 수 있습니다.

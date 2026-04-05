@@ -72,8 +72,9 @@ export default async function HomePage() {
 
             <div className="max-w-3xl">
               <h1 className="text-4xl font-black tracking-[-0.04em] text-rose-800 sm:text-5xl lg:text-6xl">
-                벚꽃 하츄핑 봄날의 세션 신청~!
+                벚꽃 하츄핑
                 <br />
+                봄날의 세션 신청~!
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-rose-700/80 sm:text-lg">
                화이팅이에요 Ampersand~!!
